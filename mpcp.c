@@ -85,7 +85,7 @@ static int sockaddr_init(int s, struct sockaddr_ll *socket_address)
 int main(int argc, char** argv)
 {
 	int s;
-	unsigned char pause_multicast[ETH_ALEN] = { 0x01, 0x80, 0xC2, 0x00, 0x00, 0x08 };
+	unsigned char pause_multicast[ETH_ALEN] = { 0x01, 0x80, 0xC2, 0x00, 0x00, 0x01 };
 	unsigned char packet[ETH_ZLEN+ETH_FCS_LEN];
 	struct ethhdr *eh = (struct ethhdr *)packet;
 	char* payload;
